@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Indicator from "./pages/Indicator";
 import Performance from "./pages/Performamce";
 import Guide from "./pages/Guide";
+import Program from "./pages/Program";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/guide" exact Component={Guide}></Route>
         <Route path="/performance" exact Component={Performance}></Route>
         <Route path="/indicator" exact Component={Indicator}></Route>
+        <Route path="/program" exact Component={Program}></Route>
       </Routes>
       <WarningFooter/>
       <Footer />

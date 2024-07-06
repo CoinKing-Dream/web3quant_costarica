@@ -510,7 +510,7 @@ const Indicator = () => {
           <LightBox imageData={imageData.slice(23, 27)} />
 
           <Link to={"/program"}>
-                <GhostButton text={"Refer Now"} />
+                <GhostButton text={"Refer Now"} font={"text-2xl"} />
           </Link>
         </div>
       </div>
