@@ -54,31 +54,3 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
-.gallery{
-  columns: 4;/*段組みの数*/
-  padding:0 15px;/*ギャラリー左右に余白をつける*/
-  }
-  
-  .gallery li {
-      margin-bottom: 20px;/*各画像下に余白をつける*/
-  }
-  
-  /*ギャラリー内のイメージは横幅100%にする*/
-  .gallery img{
-    width:100%;
-    height:auto;
-    vertical-align: bottom;/*画像の下にできる余白を削除*/}
-  
-  /*　横幅900px以下の段組み設定　*/
-  @media only screen and (max-width: 900px) {
-    .gallery{
-    columns:3;
-    } 
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .gallery{
-    columns: 2;
-    } 

@@ -5,10 +5,12 @@ import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 import { Route, Routes } from "react-router-dom";
 
-import About from "./pages/About";
-import Guide from "./pages/Guide";
-import Performance from "./pages/Performamce";
 import WarningFooter from "./components/WarningFooter";
+
+import About from "./pages/About";
+import Indicator from "./pages/Indicator";
+import Performance from "./pages/Performamce";
+import Guide from "./pages/Guide";
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/about" exact Component={About}></Route>
         <Route path="/guide" exact Component={Guide}></Route>
         <Route path="/performance" exact Component={Performance}></Route>
+        <Route path="/indicator" exact Component={Indicator}></Route>
       </Routes>
       <WarningFooter/>
       <Footer />
