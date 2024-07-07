@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import SubscribeButton from "../components/SubscribeButton";
 
 const Header = () => {
   const navBarItems = [
@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center w-screen">
+      <div className="flex flex-col justify-center items-center w-screen max-[900px]:flex-row-reverse">
         <div className="flex flex-row py-4 justify-between items-center my-container">
           <div>
             <IconButton>
@@ -41,12 +41,12 @@ const Header = () => {
               Web3Quant
             </a>
           </div>
-          <div >
+          <div className="flex flex-row justify-center items-center gap-3">
             <a href="" className="text-sm font-medium text-black px-2">SIGN IN</a>
-            <Button variant="outlined" startIcon={<EmailOutlinedIcon/>} className="text-white bg-amber-500 text-sm font-bold rounded-full py-1 px-2">SUBSCRIBE</Button>
+            <SubscribeButton flag={false}/>
           </div>
         </div>
-        <div className="flex flex-row border-t-[1px] border-b-[1px] border-gray py-4 w-full justify-center">
+        <div className="flex flex-row min-[900px]:border-t-[1px] min-[900px]:border-b-[1px] border-gray py-4 w-full justify-center max-[900px]:gap-3 min-[900px]:gap-10">
             {
                 navBarItems.map(item => {
                     return (

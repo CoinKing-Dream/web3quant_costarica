@@ -32,7 +32,7 @@ function App() {
       </Routes>
       {link.pathname != "/program" && <WarningFooter />}
       <Footer />
-      <SubscribeButton />
+      <SubscribeButton flag={true} />
     </div>
   );
 }
