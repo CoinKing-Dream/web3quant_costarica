@@ -2,7 +2,7 @@ const WarningFooter = () => {
   return (
     <>
       <div className="flex justify-center w-screen">
-        <div className="w-[40%] flex flex-col">
+        <div className="w-[750px] max-[900px]:w-[80%] flex flex-col">
           <hr className="w-full my-10" />
 
           <div className="general-text leading-normal text-left">

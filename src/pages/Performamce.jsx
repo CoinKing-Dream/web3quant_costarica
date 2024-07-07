@@ -30,14 +30,14 @@ const Performance = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center w-screen pt-16 gap-5">
-        <div className="flex flex-col text-left w-[40%] gap-5">
+        <div className="flex flex-col text-left w-[750px] max-[900px]:w-[80%] gap-5">
           <div className="big-title">Performance</div>
           <div className="general-text leading-normal">
             Here is Web3Quant indicator performance.
           </div>
         </div>
 
-        <div className="w-[50%] ">
+        <div className="w-[1020px] max-[1110px]:w-[90%]">
           <LightBox imageData={imageData.slice(0, 12)} />
         </div>
 
@@ -45,7 +45,7 @@ const Performance = () => {
           Here is the same indicator without any change of setting on Stocks.
         </div>
 
-        <div className="w-[50%] ">
+        <div className="w-[1020px] max-[1110px]:w-[90%] ">
           <LightBox imageData={imageData.slice(12, 16)} />
         </div>
 

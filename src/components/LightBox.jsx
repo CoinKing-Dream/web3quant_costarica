@@ -37,6 +37,7 @@ const LightBox = ({ imageData }) => {
                   src={item.link}
                   alt=""
                   onClick={() => lightbox.openImage(item.link)}
+                  width={1000}
                 />
               </a>
               {item.caption && <div className="py-1">{item.caption}</div>}

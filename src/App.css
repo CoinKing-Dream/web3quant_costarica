@@ -49,8 +49,23 @@ a {
 
 .guide_0_image {
   background-image: url("./assets/image/guide_0.png");
-  padding-top: 30vw;
+  padding-top: 400px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.footer-text-style {
+  color: rgb(163 163 163) !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .big-title {
+    font-size: 2.5rem !important;
+  }
+
+  .guide_0_image {
+    padding-top: 50vw;
+  }
+  
 }

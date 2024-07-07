@@ -41,7 +41,7 @@ const Indicator = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center w-screen pt-16">
-        <div className="flex flex-col text-left w-[40%] gap-5">
+        <div className="flex flex-col text-left w-[750px] max-[900px]:w-[80%] gap-5">
           <div className="big-title">Indicator</div>
           <div className="general-text">
             <div className="leading-normal">
@@ -403,57 +403,57 @@ const Indicator = () => {
           </div>
           <div className="medium-title text-underline">BITCOIN</div>
         </div>
-        <div className="flex flex-col text-left w-[60%] gap-5">
+        <div className="flex flex-col text-left w-[1020px] max-[1110px]:w-[90%] gap-5">
           <LightBox imageData={imageData.slice(0, 7)} />
         </div>
 
-        <div className="medium-title text-underline w-[40%] text-left">SOL</div>
-        <div className="flex flex-col text-left w-[60%] gap-5">
+        <div className="medium-title text-underline w-[750px] max-[900px]:w-[80%] text-left">SOL</div>
+        <div className="flex flex-col text-left w-[1020px] max-[1110px]:w-[90%] gap-5">
           <LightBox imageData={imageData.slice(7, 8)} />
         </div>
 
-        <div className="medium-title text-underline w-[40%] text-left">
+        <div className="medium-title text-underline w-[750px] max-[900px]:w-[80%] text-left">
           LUNA - The Rise
         </div>
-        <div className="flex flex-col text-left w-[60%] gap-5">
+        <div className="flex flex-col text-left w-[1020px] max-[1110px]:w-[90%] gap-5">
           <LightBox imageData={imageData.slice(8, 9)} />
         </div>
 
-        <div className="medium-title text-underline w-[40%] text-left">
+        <div className="medium-title text-underline w-[750px] max-[900px]:w-[80%] text-left">
           LUNA - The fall
         </div>
-        <div className="flex flex-col text-left w-[60%] gap-5">
+        <div className="flex flex-col text-left w-[1020px] max-[1110px]:w-[90%] gap-5">
           <LightBox imageData={imageData.slice(9, 10)} />
         </div>
 
-        <div className="medium-title text-underline  w-[40%] text-left">
+        <div className="medium-title text-underline  w-[750px] max-[900px]:w-[80%] text-left">
           DOGE
         </div>
-        <div className="flex flex-col text-left w-[60%] gap-5">
+        <div className="flex flex-col text-left w-[1020px] max-[1110px]:w-[90%] gap-5">
           <LightBox imageData={imageData.slice(10, 11)} />
         </div>
 
-        <div className="medium-title text-underline  w-[40%] text-left">
+        <div className="medium-title text-underline  w-[750px] max-[900px]:w-[80%] text-left">
           ADA
         </div>
-        <div className="flex flex-col text-left w-[60%] gap-5">
+        <div className="flex flex-col text-left w-[1020px] max-[1110px]:w-[90%] gap-5">
           <LightBox imageData={imageData.slice(11, 12)} />
         </div>
 
-        <div className="leading-normal w-[40%] text-left font-bold py-1">
+        <div className="leading-normal w-[750px] max-[900px]:w-[80%] text-left font-bold py-1">
           Let's move to the TradFI results. Here we will look at results on a
           3Day timeframe to give you a big-picture perspective.
         </div>
-        <div className="leading-normal w-[40%] text-left font-bold py-1">
+        <div className="leading-normal w-[750px] max-[900px]:w-[80%] text-left font-bold py-1">
           NOTE: This is the exact same indicator you saw in earlier with the
           same settings. Just run on a 3Day timeframe.
         </div>
 
-        <div className="flex flex-col text-left w-[60%] gap-5">
+        <div className="flex flex-col text-left w-[1020px] max-[1110px]:w-[90%] gap-5">
           <LightBox imageData={imageData.slice(12, 23)} />
         </div>
 
-        <div className="leading-normal w-[40%] text-left font-bold py-1">
+        <div className="leading-normal w-[750px] max-[900px]:w-[80%] text-left font-bold py-1">
           <div className="semi-medium-title">MACRO</div>
           <div className="general-text">
             <div className="leading-normal">
@@ -506,7 +506,7 @@ const Indicator = () => {
           </div>
         </div>
 
-        <div className="flex flex-col text-left w-[60%] gap-5 items-center">
+        <div className="flex flex-col text-left w-[1020px] max-[1110px]:w-[90%] gap-5 items-center">
           <LightBox imageData={imageData.slice(23, 27)} />
 
           <Link to={"/program"}>

@@ -12,10 +12,14 @@ import Indicator from "./pages/Indicator";
 import Performance from "./pages/Performamce";
 import Guide from "./pages/Guide";
 import Program from "./pages/Program";
+import { useLocation } from "react-router-dom";
+import SubscribeButton from "./components/SubscribeButton";
 
 function App() {
+  const link = useLocation();
+
   return (
-    <>
+    <div className="relative">
       <HeadNotify />
       <Header />
 
@@ -26,9 +30,10 @@ function App() {
         <Route path="/indicator" exact Component={Indicator}></Route>
         <Route path="/program" exact Component={Program}></Route>
       </Routes>
-      <WarningFooter/>
+      {link.pathname != "/program" && <WarningFooter />}
       <Footer />
-    </>
+      <SubscribeButton />
+    </div>
   );
 }
 
