@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 // Define the initial state for the user's slice of the store.
 const initialState = {
   flagHeadNotify: true, // Token to authenticate API requests
+  flagSubscribeModal: false   // Show Subscribe Modal
 };
 
 // Create a "slice" of the state with three reducers to handle user actions.

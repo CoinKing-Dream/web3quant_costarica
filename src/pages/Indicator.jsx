@@ -40,7 +40,7 @@ let imageData = imageCaption.map((val, ind) => ({
 const Indicator = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-screen pt-16">
+      <div className="flex flex-col items-center justify-center w-full pt-16">
         <div className="flex flex-col text-left w-[750px] max-[900px]:w-[80%] gap-5">
           <div className="big-title">Indicator</div>
           <div className="general-text">

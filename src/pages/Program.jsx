@@ -4,7 +4,7 @@ import GhostButton from "../components/GhostButton";
 const Program = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-screen pt-16">
+      <div className="flex flex-col items-center justify-center w-full pt-16">
         <div className="flex flex-col text-left w-[40%] gap-5 items-center">
           <div className="big-title">Referral Program</div>
 

@@ -14,6 +14,8 @@ import Guide from "./pages/Guide";
 import Program from "./pages/Program";
 import { useLocation } from "react-router-dom";
 import SubscribeButton from "./components/SubscribeButton";
+import Home from "./pages/Home";
+import SubscribeModal from "./pages/SubscribeModal";
 
 function App() {
   const link = useLocation();
@@ -22,8 +24,9 @@ function App() {
     <div className="relative">
       <HeadNotify />
       <Header />
-
+      <SubscribeModal />
       <Routes>
+        <Route path="/" exact Component={Home}></Route>
         <Route path="/about" exact Component={About}></Route>
         <Route path="/guide" exact Component={Guide}></Route>
         <Route path="/performance" exact Component={Performance}></Route>
@@ -32,7 +35,7 @@ function App() {
       </Routes>
       {link.pathname != "/program" && <WarningFooter />}
       <Footer />
-      <SubscribeButton flag={true} />
+      <SubscribeButton flag={0} />
     </div>
   );
 }

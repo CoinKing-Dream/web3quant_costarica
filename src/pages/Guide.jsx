@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Guide = () => {
   return (
     <>
-      <div className="flex justify-center w-screen pt-16">
+      <div className="flex justify-center w-full pt-16">
         <div className="flex flex-col text-left w-[750px] max-[900px]:w-[80%] gap-5">
           <div className="big-title">How to? Guide</div>
 

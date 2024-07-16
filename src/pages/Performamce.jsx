@@ -29,7 +29,7 @@ let imageData = imageCaption.map((val, ind) => ({
 const Performance = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-screen pt-16 gap-5">
+      <div className="flex flex-col items-center justify-center w-full pt-16 gap-5">
         <div className="flex flex-col text-left w-[750px] max-[900px]:w-[80%] gap-5">
           <div className="big-title">Performance</div>
           <div className="general-text leading-normal">
