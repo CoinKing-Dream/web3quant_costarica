@@ -16,13 +16,13 @@ const SubscribeModal = () => {
             className="fixed inset-0 bg-gray-500 bg-opacity-60 transition-opacity"
             aria-hidden="true"
           ></div>
-          {/* <span
+          <span
             className="hidden sm:inline-block sm:align-middle sm:h-screen"
             aria-hidden="true"
           >
             &#8203;
             asdf
-          </span> */}
+          </span>
           <div className="inline-block bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all my-8 align-middle max-w-lg w-full">
             <div className="bg-white px-4 pt-5 pb-4">
               asdfasdfsdf
