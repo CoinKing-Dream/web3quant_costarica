@@ -15,11 +15,14 @@ const generalSlice = createSlice({
     updateHeadNotify: (state, action) => {
       state.flagHeadNotify = action.payload;
     },
+    updateSubscribeModal: (state, action) => {
+      state.flagSubscribeModal = action.payload;
+    }
   },
 });
 
 // Export actions to be used with dispatch in React components
-export const { updateHeadNotify } = generalSlice.actions;
+export const { updateHeadNotify, updateSubscribeModal } = generalSlice.actions;
 
 // Export the reducer to be included when creating the Redux store
 export default generalSlice.reducer;

@@ -1,7 +1,11 @@
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import { useDispatch } from "react-redux";
+import { updateSubscribeModal } from "../store/generalSlice";
 
 const SubscribeButton = ({ flag }) => {
+  const dispatch = useDispatch();
+
   let className =
     "flex flex-row gap-2 justify-center rounded-full items-center text-white bg-[--ghost-accent-color] ";
   className +=
@@ -10,7 +14,7 @@ const SubscribeButton = ({ flag }) => {
       : "text-xs font-bold py-1 px-4";
 
   return (
-    <>
+    <div onClick={() => dispatch(updateSubscribeModal(true))}>
       {flag != 2 ? (
         <>
           <button className={className}>
@@ -37,7 +41,7 @@ const SubscribeButton = ({ flag }) => {
           </button>
         </>
       )}
-    </>
+    </div>
   );
 };
 

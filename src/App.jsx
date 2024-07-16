@@ -16,15 +16,17 @@ import { useLocation } from "react-router-dom";
 import SubscribeButton from "./components/SubscribeButton";
 import Home from "./pages/Home";
 import SubscribeModal from "./pages/SubscribeModal";
+import { useSelector } from "react-redux";
 
 function App() {
   const link = useLocation();
+  const {flagSubscribeModal} = useSelector(state => state.general);
 
   return (
-    <div className="relative">
+    <div className="relative z-10 w-screen">
       <HeadNotify />
       <Header />
-      <SubscribeModal />
+      {flagSubscribeModal && <SubscribeModal />}
       <Routes>
         <Route path="/" exact Component={Home}></Route>
         <Route path="/about" exact Component={About}></Route>
