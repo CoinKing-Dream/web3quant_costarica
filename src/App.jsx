@@ -17,16 +17,18 @@ import SubscribeButton from "./components/SubscribeButton";
 import Home from "./pages/Home";
 import SubscribeModal from "./pages/SubscribeModal";
 import { useSelector } from "react-redux";
+import SearchModal from "./pages/SearchModal";
 
 function App() {
   const link = useLocation();
-  const {flagSubscribeModal} = useSelector(state => state.general);
+  const {flagSubscribeModal, flagSearchModal} = useSelector(state => state.general);
 
   return (
     <div className="relative z-10 w-screen">
       <HeadNotify />
       <Header />
       {flagSubscribeModal && <SubscribeModal />}
+      {flagSearchModal && <SearchModal/>}
       <Routes>
         <Route path="/" exact Component={Home}></Route>
         <Route path="/about" exact Component={About}></Route>

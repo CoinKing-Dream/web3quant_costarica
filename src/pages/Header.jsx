@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import SubscribeButton from "../components/SubscribeButton";
+import { useDispatch } from "react-redux";
+import { updateSearchModal } from "../store/generalSlice";
 
 const Header = () => {
+  const dispatch = useDispatch();
   const navBarItems = [
     {
       title: "HOME",
@@ -36,11 +39,9 @@ const Header = () => {
     <>
       <div className="flex flex-col justify-center items-center max-[900px]:flex-row-reverse">
         <div className="flex flex-row py-4 justify-between items-center my-container">
-          <div>
-            <IconButton>
-              <SearchIcon />
-            </IconButton>
-          </div>
+          <IconButton onClick={() => dispatch(updateSearchModal(true))}>
+            <SearchIcon />
+          </IconButton>
           <div className="text-2xl font-black">
             <a href="#" className="text-black">
               Web3Quant

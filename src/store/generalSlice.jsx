@@ -3,7 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 // Define the initial state for the user's slice of the store.
 const initialState = {
   flagHeadNotify: true, // Token to authenticate API requests
-  flagSubscribeModal: false   // Show Subscribe Modal
+  flagSubscribeModal: false,   // Show Subscribe Modal
+  flagSearchModal: false    // Show Search Modal
 };
 
 // Create a "slice" of the state with three reducers to handle user actions.
@@ -17,12 +18,15 @@ const generalSlice = createSlice({
     },
     updateSubscribeModal: (state, action) => {
       state.flagSubscribeModal = action.payload;
+    },
+    updateSearchModal: (state, action) => {
+      state.flagSearchModal = action.payload;
     }
   },
 });
 
 // Export actions to be used with dispatch in React components
-export const { updateHeadNotify, updateSubscribeModal } = generalSlice.actions;
+export const { updateHeadNotify, updateSubscribeModal, updateSearchModal } = generalSlice.actions;
 
 // Export the reducer to be included when creating the Redux store
 export default generalSlice.reducer;
